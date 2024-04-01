@@ -47,6 +47,8 @@ Landcapes
 
 ## Testimonials
 
+Testimonials from Previous Clients
+
 "Ellie Mae Photography exceeded my expectations! Ellie's attention to detail and ability to capture genuine emotions in her photos truly sets her apart. I couldn't be happier with the beautiful portraits she created for my family."
 
 - Sarah W.
