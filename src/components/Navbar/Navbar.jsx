@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Container>
-        <a href="#" className="logo">
+        <a href="#" className="navbar__logo">
           <img src={logoDark} alt="Ellie Mae Logo" />
         </a>
 

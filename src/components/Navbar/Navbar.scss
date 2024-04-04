@@ -4,4 +4,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__logo {
+    img {
+      width: 8rem;
+    }
+  }
 }
