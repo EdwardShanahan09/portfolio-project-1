@@ -20,7 +20,7 @@ const Navbar = () => {
           <img src={logoDark} alt="Ellie Mae Logo" />
         </a>
 
-        <ul className="navbar__list">
+        <ul className={`navbar__list ${isOpen ? "active" : ""}`}>
           <li className="navbar__item">
             <a className="navbar__link" href="#">
               Home
