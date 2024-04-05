@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="navbar__menu-line navbar__menu-line--bottom"></div>
         </div>
 
-        <div className="navbar__overlay"></div>
+        <div className={`navbar__overlay ${isOpen ? "active" : ""}`}></div>
       </Container>
     </nav>
   );

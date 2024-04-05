@@ -1,4 +1,5 @@
 .navbar {
+  position: relative;
   padding: 2.4rem 0;
   & .container {
     display: flex;
@@ -17,6 +18,7 @@
   }
 
   &__menu {
+    z-index: 100;
     &-line {
       background-color: #444;
       width: 3rem;
@@ -29,12 +31,29 @@
     }
 
     &.active &-line--top {
+      background-color: #fff;
       transform: rotate(45deg) translate(3px, 0);
       margin-bottom: 0px;
     }
 
     &.active &-line--bottom {
+      background-color: #fff;
       transform: rotate(-45deg);
+    }
+  }
+
+  &__overlay {
+    background-color: #444;
+    transition: all 0.3s;
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    &.active {
+      width: 100%;
     }
   }
 }
