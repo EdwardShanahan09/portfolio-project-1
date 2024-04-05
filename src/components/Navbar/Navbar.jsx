@@ -1,8 +1,18 @@
+import { useState } from "react";
 import "./Navbar.scss";
 import logoDark from "../../assets/imgs/logo-dark.svg";
 import Container from "../Container/Container";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavbarToogle = () => {
+    if (!isOpen) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  };
   return (
     <nav className="navbar">
       <Container>
@@ -38,9 +48,12 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="navbar__menu">
-          <div className="navbar__menu-lines"></div>
-          <div className="navbar__menu-lines"></div>
+        <div
+          onClick={handleNavbarToogle}
+          className={`navbar__menu ${isOpen ? "active" : ""}`}
+        >
+          <div className="navbar__menu-line navbar__menu-line--top"></div>
+          <div className="navbar__menu-line navbar__menu-line--bottom"></div>
         </div>
 
         <div className="navbar__overlay"></div>

@@ -1,4 +1,5 @@
 .navbar {
+  padding: 2.4rem 0;
   & .container {
     display: flex;
     align-items: center;
@@ -8,6 +9,32 @@
   &__logo {
     img {
       width: 8rem;
+    }
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__menu {
+    &-line {
+      background-color: #444;
+      width: 3rem;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
+
+      &--top {
+        margin-bottom: 5px;
+      }
+    }
+
+    &.active &-line--top {
+      transform: rotate(45deg) translate(3px, 0);
+      margin-bottom: 0px;
+    }
+
+    &.active &-line--bottom {
+      transform: rotate(-45deg);
     }
   }
 }
