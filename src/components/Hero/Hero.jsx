@@ -28,6 +28,8 @@ const Hero = () => {
       <div className="hero__img">
         <Slideshow images={images} />
       </div>
+
+      <div className="hero__overlay"></div>
     </div>
   );
 };

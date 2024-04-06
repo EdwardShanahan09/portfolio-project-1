@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./Slideshow.scss";
 
 const Slideshow = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,20 +13,9 @@ const Slideshow = (props) => {
     return () => clearInterval(intervalId);
   }, [images.length]);
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
-
   return (
     <div className="slideshow">
       <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-      <div className="buttons">
-        {images.map((_, index) => (
-          <button key={index} onClick={() => goToSlide(index)}>
-            {`Slide ${index + 1}`}
-          </button>
-        ))}
-      </div>
     </div>
   );
 };
