@@ -1,0 +1,14 @@
+.hero {
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__title {
+    color: #6f6d6d;
+    font-size: 1.8rem;
+    margin-bottom: 3.2rem;
+  }
+}

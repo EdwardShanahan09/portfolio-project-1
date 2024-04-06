@@ -26,7 +26,6 @@ html {
 body {
   color: $colorDark;
   font-family: $fontFamilyBody;
-  line-height: 1.6;
 }
 
 img {
@@ -38,6 +37,25 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: inherit;
+  border: none;
+}
+
 ul {
   list-style: none;
+}
+
+// Typography
+
+h1,
+h2,
+h3 {
+  color: #444;
+  font-family: $fontFamilyHeadings;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
 }
