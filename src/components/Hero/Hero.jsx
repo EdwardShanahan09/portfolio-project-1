@@ -2,14 +2,13 @@ import "./Hero.scss";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
 import Slideshow from "../Slideshow/Slideshow";
+import slideshow1 from "../../assets/imgs/slideshow-1.jpg";
+import slideshow2 from "../../assets/imgs/slideshow-2.jpg";
+import slideshow3 from "../../assets/imgs/slideshow-3.jpg";
+import slideshow4 from "../../assets/imgs/slideshow-4.jpg";
 
 const Hero = () => {
-  const images = [
-    "https://images.pexels.com/photos/16039120/pexels-photo-16039120/free-photo-of-sunlit-rocks-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/19107832/pexels-photo-19107832/free-photo-of-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/1123567/pexels-photo-1123567.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
-    "https://images.pexels.com/photos/1819784/pexels-photo-1819784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  ];
+  const images = [slideshow1, slideshow2, slideshow3, slideshow4];
 
   return (
     <div className="hero">
