@@ -27,7 +27,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar__item">
-            <a className="navbar__link" href="#">
+            <a className="navbar__link" href="#about">
               About
             </a>
           </li>
