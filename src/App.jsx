@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Container from "./components/Container/Container";
 import About from "./sections/About/About";
+import Serrvices from "./sections/Services/Services";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Container>
           <About />
+          <Serrvices />
         </Container>
       </main>
     </>
