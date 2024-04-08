@@ -1,3 +1,4 @@
+import SocialMediaIcons from "../../components/SocialMediaIcons/SocialMediaIcons";
 import "./About.scss";
 import aboutImg1 from "../../assets/imgs/about-1.jpg";
 import aboutImg2 from "../../assets/imgs/about-2.jpg";
@@ -31,6 +32,8 @@ const About = () => {
           With my experience and passion for photography, I am very confident
           you will be happy with my work.
         </p>
+
+        <SocialMediaIcons />
       </div>
     </section>
   );
