@@ -1,0 +1,23 @@
+.gallery {
+  &__tab-buttons {
+    margin-bottom: 2.4rem;
+  }
+
+  &__tab-button {
+    background-color: transparent;
+    font-size: 1.6rem;
+    border: none;
+    margin-right: 1.6rem;
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

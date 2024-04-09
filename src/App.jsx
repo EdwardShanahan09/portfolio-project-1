@@ -4,6 +4,8 @@ import Hero from "./components/Hero/Hero";
 import Container from "./components/Container/Container";
 import About from "./sections/About/About";
 import Serrvices from "./sections/Services/Services";
+import Portfolio from "./sections/portfolio/Portfolio";
+
 function App() {
   return (
     <>
@@ -14,6 +16,7 @@ function App() {
         <Container>
           <About />
           <Serrvices />
+          <Portfolio />
         </Container>
       </main>
     </>
