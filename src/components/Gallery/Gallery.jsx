@@ -31,7 +31,6 @@ const Gallery = (props) => {
         <button
           onClick={() => setFilter("landcapes")}
           className="gallery__tab-button"
-          className="gallery__tab-button"
         >
           Landcapes
         </button>
@@ -39,8 +38,8 @@ const Gallery = (props) => {
 
       <div className="gallery__images">
         {filteredImages.map((image, index) => (
-          <div>
-            <img src={image.url} alt={image.alt} key={index} />
+          <div key={index}>
+            <img src={image.url} alt={image.alt} />
           </div>
         ))}
       </div>

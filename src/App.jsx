@@ -5,6 +5,7 @@ import Container from "./components/Container/Container";
 import About from "./sections/About/About";
 import Serrvices from "./sections/Services/Services";
 import Portfolio from "./sections/portfolio/Portfolio";
+import Testimonials from "./sections/Testimonials/Testimonials";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <About />
           <Serrvices />
           <Portfolio />
+          <Testimonials />
         </Container>
       </main>
     </>
