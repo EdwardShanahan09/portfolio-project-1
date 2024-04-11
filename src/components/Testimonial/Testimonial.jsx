@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./Testimonials.scss";
 const Testimonial = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = props.testimonials;
@@ -13,16 +13,14 @@ const Testimonial = (props) => {
   }, [testimonials.length]);
 
   return (
-    <div>
+    <div className="testimonial">
       <div
         style={{
-          background: `url(${testimonials[currentIndex].image})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${testimonials[currentIndex].image}) no-repeat center/cover`,
         }}
         className="testimonial__background"
       >
-        <div className="testimonial__text">
+        <div className="testimonial__card">
           <img
             src={testimonials[currentIndex].avatar}
             alt={testimonials[currentIndex].name}
@@ -38,9 +36,7 @@ const Testimonial = (props) => {
           <div
             onClick={() => setCurrentIndex(index)}
             className="testimonial__tab"
-          >
-            {index}
-          </div>
+          ></div>
         ))}
       </div>
     </div>
