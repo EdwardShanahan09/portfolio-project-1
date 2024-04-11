@@ -13,21 +13,36 @@ const Testimonial = (props) => {
   }, [testimonials.length]);
 
   return (
-    <div
-      style={{
-        background: `url(${testimonials[currentIndex].image})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-      className="testimonial"
-    >
-      <img
-        src={testimonials[currentIndex].avatar}
-        alt={testimonials[currentIndex].name}
-      />
-      <p>{testimonials[currentIndex].description}</p>
+    <div>
+      <div
+        style={{
+          background: `url(${testimonials[currentIndex].image})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+        className="testimonial__background"
+      >
+        <div className="testimonial__text">
+          <img
+            src={testimonials[currentIndex].avatar}
+            alt={testimonials[currentIndex].name}
+          />
+          <p>{testimonials[currentIndex].description}</p>
 
-      <h3>{testimonials[currentIndex].name}</h3>
+          <h3>{testimonials[currentIndex].name}</h3>
+        </div>
+      </div>
+
+      <div className="testimonial__tabs">
+        {testimonials.map((_, index) => (
+          <div
+            onClick={() => setCurrentIndex(index)}
+            className="testimonial__tab"
+          >
+            {index}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
