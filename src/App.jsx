@@ -7,6 +7,8 @@ import Serrvices from "./sections/Services/Services";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Testimonials from "./sections/Testimonials/Testimonials";
 import Contact from "./sections/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>
@@ -22,6 +24,8 @@ function App() {
           <Contact />
         </Container>
       </main>
+
+      <Footer />
     </>
   );
 }
