@@ -11,7 +11,7 @@ const Hero = () => {
   const images = [slideshow1, slideshow2, slideshow3, slideshow4];
 
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <div className="hero__text">
         <Container>
           <h1>Ellie Mae Photography</h1>

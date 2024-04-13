@@ -77,11 +77,11 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div className="portfolio">
+    <section id="portfolio" className="portfolio">
       <h2>My Latest Work</h2>
 
       <Gallery images={images} />
-    </div>
+    </section>
   );
 };
 
