@@ -13,6 +13,10 @@
     }
   }
 
+  &__logo--light {
+    display: none;
+  }
+
   &__list {
     height: 100%;
     display: none;
@@ -93,5 +97,13 @@
 
   &.sticky &__menu-line {
     background-color: #fff;
+  }
+
+  &.sticky &__logo--dark {
+    display: none;
+  }
+
+  &.sticky &__logo--light {
+    display: block;
   }
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Navbar.scss";
 import logoDark from "../../assets/imgs/logo-dark.svg";
+import logoLight from "../../assets/imgs/logo-light.svg";
 import Container from "../Container/Container";
 
 const Navbar = () => {
@@ -38,7 +39,17 @@ const Navbar = () => {
     <nav className={`navbar ${fixNav ? "sticky" : " "}`}>
       <Container>
         <a href="#" className="navbar__logo">
-          <img src={logoDark} alt="Ellie Mae Logo" />
+          <img
+            className="navbar__logo--dark"
+            src={logoDark}
+            alt="Ellie Mae Logo"
+          />
+
+          <img
+            className="navbar__logo--light"
+            src={logoLight}
+            alt="Ellie Mae Logo"
+          />
         </a>
 
         <ul className={`navbar__list ${isOpen ? "active" : ""}`}>
