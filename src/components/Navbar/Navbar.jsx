@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.scss";
 import logoDark from "../../assets/imgs/logo-dark.svg";
 import Container from "../Container/Container";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [fixNav, setFixNav] = useState(false);
 
   const handleNavbarToogle = () => {
     if (!isOpen) {
@@ -13,8 +14,28 @@ const Navbar = () => {
       setIsOpen(false);
     }
   };
+
+  const stickyNavbar = () => {
+    const windowHeight = window.scrollY;
+
+    if (windowHeight > 500) {
+      setFixNav(true);
+    } else {
+      setFixNav(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    window.addEventListener("scroll", stickyNavbar);
+  });
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${fixNav ? "sticky" : " "}`}>
       <Container>
         <a href="#" className="navbar__logo">
           <img src={logoDark} alt="Ellie Mae Logo" />

@@ -81,4 +81,17 @@
       width: 100%;
     }
   }
+
+  &.sticky {
+    position: fixed;
+    background-color: #444;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  &.sticky &__menu-line {
+    background-color: #fff;
+  }
 }
