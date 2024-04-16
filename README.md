@@ -13,3 +13,5 @@ This project is for a fictional photographer. Ellie Mae is a professional photog
 The website is one page and easy to navigate, it is very clean using minimal colours and fonts. The website is also responsive for different screen sizes.
 
 The user will be able to learn about Ellie Mae with the about section, and see her photography work using a modern photo gallery. The user will be able to see a list of her services and a contact form to get in touch. Ellie Mae’s social media accounts are also included on the website so users can keep up to date by following her.
+
+[Live Demo](https://ellie-mae-photography.netlify.app/)
