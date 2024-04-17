@@ -1,6 +1,7 @@
 .navbar {
   position: relative;
   padding: 2.4rem 0;
+
   & .container {
     display: flex;
     align-items: center;
@@ -21,6 +22,12 @@
     height: 100%;
     display: none;
 
+    @media (min-width: 820px) {
+      display: block;
+      height: auto;
+      display: flex;
+    }
+
     &.active {
       text-align: center;
       position: fixed;
@@ -34,15 +41,37 @@
 
   &__item {
     margin-bottom: 2.4rem;
+
+    @media (min-width: 820px) {
+      margin-bottom: 0;
+      margin-left: 4rem;
+    }
   }
 
   &__link {
     color: #fff;
     font-size: 2.4rem;
+
+    @media (min-width: 820px) {
+      color: #444;
+      font-size: 1.4rem;
+    }
+
+    @media (min-width: 1040px) {
+      font-size: 1.6rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__menu {
     z-index: 100;
+
+    @media (min-width: 820px) {
+      display: none;
+    }
 
     &-line {
       background-color: #444;
@@ -105,5 +134,9 @@
 
   &.sticky &__logo--light {
     display: block;
+  }
+
+  &.sticky &__link {
+    color: #fff;
   }
 }
