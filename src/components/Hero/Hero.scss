@@ -1,9 +1,14 @@
 .hero {
   position: relative;
   height: 80vh;
+  display: flex;
 
   @media (min-width: 768px) {
     height: 60vh;
+  }
+
+  @media (min-width: 1040px) {
+    height: 80vh;
   }
 
   &__text {
@@ -13,6 +18,11 @@
     height: 100%;
     z-index: 1;
     text-align: center;
+    flex-basis: 40%;
+
+    @media (min-width: 1040px) {
+      text-align: left;
+    }
   }
 
   &__title {
@@ -22,10 +32,16 @@
   }
 
   &__img {
+    flex-basis: 55%;
     position: absolute;
     top: 0;
     z-index: -2;
     width: 100%;
+
+    @media (min-width: 1040px) {
+      position: relative;
+      top: auto;
+    }
   }
 
   &__overlay {
@@ -36,5 +52,9 @@
     top: 0;
     left: 0;
     z-index: -1;
+
+    @media (min-width: 1040px) {
+      display: none;
+    }
   }
 }
