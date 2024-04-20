@@ -37,7 +37,7 @@ const Services = () => {
       <div className="services__text">
         <h2>What I Offer</h2>
 
-        <p>
+        <p className="services__title">
           Tailored solutions for your unique needs. From professional head shots
           to family portraits, let's create lasting memories together.
         </p>
