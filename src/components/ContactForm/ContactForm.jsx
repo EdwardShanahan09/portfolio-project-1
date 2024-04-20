@@ -1,29 +1,40 @@
 import Button from "../Button/Button";
+import "./ContactForm.scss";
 
 const ContactForm = () => {
   return (
     <form className="contact-form">
       <div className="contact__group">
         <label htmlFor="name">Name</label>
-        <input name="name" type="text" className="contact__control" />
+        <input id="name" name="name" type="text" className="contact__control" />
       </div>
 
       <div className="contact__group">
         <label htmlFor="email">Email</label>
-        <input name="email" type="email" className="contact__control" />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          className="contact__control"
+        />
       </div>
 
       <div className="contact__group">
         <label htmlFor="subject">Subject</label>
-        <input name="subject" type="text" className="contact__control" />
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          className="contact__control"
+        />
       </div>
 
       <div className="contact__group">
-        <label htmlFor="message">Subject</label>
+        <label htmlFor="message">Message</label>
         <textarea name="message" id="message"></textarea>
       </div>
 
-      <Button text="See My Work" />
+      <button>Sumbit</button>
     </form>
   );
 };
