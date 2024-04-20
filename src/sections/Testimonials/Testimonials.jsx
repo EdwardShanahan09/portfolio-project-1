@@ -41,8 +41,6 @@ const Testimonials = () => {
   ];
   return (
     <div className="testimonials">
-      <h2>Testimonials From Previous Clients</h2>
-
       <div className="testimonials__list">
         <Testimonial testimonials={testimonials} />
       </div>
