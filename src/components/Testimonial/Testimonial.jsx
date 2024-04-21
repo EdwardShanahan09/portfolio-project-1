@@ -34,8 +34,11 @@ const Testimonial = (props) => {
       <div className="testimonial__tabs">
         {testimonials.map((_, index) => (
           <div
+            key={index}
             onClick={() => setCurrentIndex(index)}
-            className="testimonial__tab"
+            className={`testimonial__tab ${
+              index === currentIndex ? "testimonial__tab--active" : ""
+            }`}
           ></div>
         ))}
       </div>
