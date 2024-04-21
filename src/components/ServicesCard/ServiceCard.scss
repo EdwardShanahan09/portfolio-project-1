@@ -5,9 +5,8 @@
   text-align: center;
   padding: 4rem 2.4rem;
 
-  @media (min-width: 768px) {
-    align-self: stretch;
-    height: 350px;
+  @media (min-width: 1040px) {
+    height: 40rem;
   }
 
   &:hover {

@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
 
       <main>
         <Container>
+          <Hero />
           <About />
           <Serrvices />
           <Portfolio />

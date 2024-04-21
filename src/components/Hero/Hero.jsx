@@ -13,15 +13,15 @@ const Hero = () => {
   return (
     <div id="home" className="hero">
       <div className="hero__text">
-        <Container>
-          <h1>Ellie Mae Photography</h1>
+        <h1>Ellie Mae Photography</h1>
 
-          <p className="hero__title">
-            I am a professional photographer who captures your dreams.
-          </p>
+        <p className="hero__title">
+          I am a professional photographer who captures your dreams.
+        </p>
 
+        <div>
           <Button text="See My Work" />
-        </Container>
+        </div>
       </div>
 
       <div className="hero__img">
