@@ -11,7 +11,7 @@ const Services = () => {
       img: serviceImg1,
       title: "Photography Sessions",
       description:
-        "Entrust us with capturing your cherished moments. Our skilled photographers excel in landscapes, portraits, and more, ensuring each click becomes a timeless masterpiece.",
+        "Trust us to capture your cherished moments. Our skilled photographers excel in landscapes, portraits, and more, crafting timeless masterpieces with every click.",
     },
     {
       img: serviceImg2,
@@ -23,13 +23,13 @@ const Services = () => {
       img: serviceImg3,
       title: "Event Coverage",
       description:
-        "Let us document your special occasions with finesse. From weddings to galas, our unobtrusive approach ensures every moment is captured with professionalism and energy.",
+        "Let us document your special occasions with finesse. From weddings to galas, our unobtrusive approach ensures every moment is captured professionally and energetically.",
     },
     {
       img: serviceImg4,
       title: "Portrait Sessions",
       description:
-        "Shine in our captivating portraits. From professional headshots to family portraits, our photographers capture your essence with authenticity and flair.",
+        "Shine in our captivating portraits. From professional headshots to family portraits, we capture your essence with authenticity and flair.",
     },
   ];
   return (

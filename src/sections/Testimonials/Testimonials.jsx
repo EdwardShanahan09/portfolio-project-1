@@ -14,28 +14,28 @@ const Testimonials = () => {
       image: testimonialImage1,
       avatar: avatarImage1,
       description:
-        "Ellie Mae Photography exceeded my expectations! Ellie's attention to detail and ability to capture genuine emotions in her photos truly sets her apart. I couldn't be happier with the beautiful portraits she created for my family.",
+        "Ellie Mae Photography surpassed expectations with detailed, emotive portraits.",
       name: "- Sarah W.",
     },
     {
       image: testimonialImage2,
       avatar: avatarImage2,
       description:
-        "Working with Ellie was an absolute pleasure. Her professionalism and creativity made the entire process seamless. The images she produced were stunning and exceeded all my hopes. I highly recommend Ellie Mae Photography to anyone looking for top-notch quality and service.",
+        "Working with Ellie was fantastic. Her professionalism and creativity made everything smooth. The images exceeded my hopes. Highly recommend Ellie Mae Photography for top-notch quality and service.",
       name: "- Mike H.",
     },
     {
       image: testimonialImage3,
       avatar: avatarImage3,
       description:
-        "Ellie's talent behind the lens is remarkable. She has a unique ability to make you feel comfortable and natural, resulting in the most authentic and beautiful photos. I'm grateful to have had Ellie capture such precious moments for my family",
+        "Ellie's talent behind the lens is remarkable. She makes you feel comfortable, resulting in authentic, beautiful photos. Grateful for Ellie capturing precious moments for my family.",
       name: "- Emily L.",
     },
     {
       image: testimonialImage4,
       avatar: avatarImage4,
       description:
-        "Ellie Mae Photography made our special day even more memorable. From the initial consultation to the final delivery of our wedding photos, Ellie's professionalism and passion for her craft were evident. Her ability to capture the essence of our love story is something we'll cherish forever.",
+        "Ellie Mae Photography made our day unforgettable. From consultation to delivery, Ellie's professionalism and passion shone through. Her ability to capture our love story is cherished forever.",
       name: "- Jack and Lauren D.",
     },
   ];
